@@ -124,7 +124,7 @@ const TransferForm = () => {
             }
           }}
         />
-        <Grid container spacing={12}>
+        <Grid container spacing={4}>
           <Grid item xs={2}>
             <div>
             New Recipient
