@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Typography, Table, TableHead, TableBody, TableRow, TableCell, CircularProgress, TextField } from '@material-ui/core';
 import { fetchTransactions } from '../reducers/transactionSlice';

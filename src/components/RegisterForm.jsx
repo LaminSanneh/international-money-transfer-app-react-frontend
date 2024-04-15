@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { Typography, TextField, Button } from '@material-ui/core';
 import { registerUser } from '../reducers/authSlice';
