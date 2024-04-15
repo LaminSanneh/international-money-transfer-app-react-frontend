@@ -1,0 +1,9 @@
+{
+  "home.greeting": "Welcome to our money transfer service!",
+  "home.instructions": "Please select a language and navigate through the menu to start transferring money.",
+  "transactionHistory.title": "Transaction History",
+  "transactionHistory.date": "Date",
+  "transactionHistory.recipient": "Recipient",
+  "transactionHistory.amount": "Amount",
+  "transactionHistory.status": "Status"
+}

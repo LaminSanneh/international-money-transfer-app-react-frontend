@@ -1,0 +1,9 @@
+{
+  "home.greeting": "Bienvenue sur notre service de transfert d'argent !",
+  "home.instructions": "Veuillez sélectionner une langue et naviguer dans le menu pour commencer à transférer de l'argent.",
+  "transactionHistory.title": "Historique des transactions",
+  "transactionHistory.date": "Date",
+  "transactionHistory.recipient": "Bénéficiaire",
+  "transactionHistory.amount": "Montant",
+  "transactionHistory.status": "Statut"
+}
