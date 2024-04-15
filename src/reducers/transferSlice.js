@@ -1,4 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
+import axios from 'axios';
 
 export const transferSlice = createSlice({
   name: 'transfer',
@@ -8,6 +9,9 @@ export const transferSlice = createSlice({
     error: null,
   },
   reducers: {
+    initiateTransferSuccess: (state, action) => {
+      // Handle success action
+    },
     setTransferDetails: (state, action) => {
       state.transferDetails = action.payload;
     },
@@ -20,7 +24,16 @@ export const transferSlice = createSlice({
   },
 });
 
-export const { setTransferDetails, setLoading, setError } = transferSlice.actions;
+export const { initiateTransferSuccess, setTransferDetails, setLoading, setError } = transferSlice.actions;
+
+export const initiateTransfer = ({ recipient, amount, currency }) => async (dispatch) => {
+  try {
+    const response = await axios.post('/api/transfer', { recipient, amount, currency });
+    dispatch(initiateTransferSuccess(response.data));
+  } catch (error) {
+    // Handle error
+  }
+};
 
 export const selectTransferDetails = (state) => state.transfer.transferDetails;
 export const selectLoading = (state) => state.transfer.loading;
