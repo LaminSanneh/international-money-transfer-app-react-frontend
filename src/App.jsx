@@ -9,6 +9,7 @@ import messagesFr from "./translations/fr.json";
 import LoginForm from "./components/LoginForm";
 import RegisterForm from "./components/RegisterForm";
 import Beneficiaries from "./components/Beneficiaries";
+import { LogoutForm } from "./components/LogoutForm";
 
 const messages = {
   en: messagesEn,
@@ -34,11 +35,13 @@ function App() {
           <Link href="/transactions">Past Transactions</Link> | &nbsp;
           <Link href="/beneficiaries">Beneficiaries</Link> | &nbsp;
           <Link href="/login">Login</Link> | &nbsp;
+          <Link href="/logout">Logout</Link> | &nbsp;
           <Link href="/register">Register</Link>
         </Box>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<LoginForm />} />
+          <Route path="/logout" element={<LogoutForm />} />
           <Route path="/register" element={<RegisterForm />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/transactions" element={<TransactionHistoryPage />} />
